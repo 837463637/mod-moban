@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "name",
+	"version": "${version}",
+	"name": "Name",
+	"description": "这是一个Fabric模组",
+	"authors": [
+		"dideng"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/name/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dideng.name.modid.Name"
+		],
+		"fabric-datagen": [
+			"dideng.name.modid.NameDataGenerator"
+		],
+		"client": [
+			"dideng.name.modid.NameClient"
+		]
+	},
+	"mixins": [
+		"name.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
